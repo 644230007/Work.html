@@ -1,0 +1,15 @@
+.mycircle{
+    width: 100px;
+    height: 100px;
+    padding-top: 25px ;
+}
+.myBgGrey{
+    background-color: darkgray;
+}
+kbd{
+    background-color: hotpink;
+}
+.my-hr{
+    border: 1px solid springgreen;
+    opacity: 1;
+}

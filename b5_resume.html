@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Site</title>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/custon_bs.css">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+</head>
+<body>
+    <!-- เมนู -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">CHUTIWAT 5</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">หน้าหลัก</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">การศึกษา</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ทักษะ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">วิชาเรียน</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    ภาพกิจกรรม
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">จิตอาสา</a></li>
+                    <li><a class="dropdown-item" href="#">กีฬาสี</a></li>
+                    <li><a class="dropdown-item" href="#">รับปริญญา</a></li>
+                  </ul>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contract.html">ติดต่อเรา</a>
+                  </li>  
+                </li>
+              </ul>
+            </div>  
+        </div>
+      </nav>
+
+      <!-- ภาพสไลด์ -->
+      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="100">
+            <img src="Images/1920x500_1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="100">
+            <img src="Images/1920x500_2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="100">
+            <img src="Images/1920x500_3.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="100">
+            <img src="Images/1920x500_4.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      
+          <!-- column แบ่งคอลลัมน์เป็น4คอลลัมน์ -->
+    <div class="container-fluid text-center text-white myBgGrey ">
+      <div class="row">
+        <div class="col-sm-3 mt-2 mb-2">
+          <div class="rounded-circle btn-danger mycircle me-auto ms-auto">
+            <i class="far fa-home"></i><br>Home</div>
+        </div>
+        <div class="col-sm-3 mt-2 mb-2">
+          <div class="rounded-circle btn-danger mycircle me-auto ms-auto">
+            <i class="fab fa-facebook"></i><br>Facebook</div>
+        </div>
+        <div class="col-sm-3 mt-2 mb-2">
+          <div class="rounded-circle btn-danger mycircle me-auto ms-auto">
+            <i class="fab fa-github"></i><br>Github</div>
+        </div>
+        <div class="col-sm-3 mt-2 mb-2">
+          <div class="rounded-circle btn-danger mycircle me-auto ms-auto">
+            <i class="fab fa-instagram"></i><br>Instargram</div>
+        </div>
+      </div>
+    </div>
+
+        <!-- เกี่ยวกับฉัน -->
+        <div class="container mt-4 h4 ">
+          เกี่ยวกับฉัน 
+          <hr class="my-hr">
+          </div>
+          
+      
+          <!-- Column เนื้อหา -->
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <div>
+                  <img src="Images/NPRU.jpg" alt="NPRU" class="img-fluid">
+                  <p style="text-align: justify;">พ.ศ. 2529
+                    รับนักศึกษาสาขาวิชาการอื่นเพิ่มขึ้น และเปิดถึงระดับปริญญาตรีเป็นปีแรกและเปิดโครงการการศึกษาสำหรับบุคลากรประจำการ(กศ.บป.)ระดับปริญญาตรีและอนุปริญญาเป็นปีแรกเปิดดำเนินการโรงเรียนสาธิตโดยรับนักเรียนชั้นมัธยมปีที่ 1 จำนวน 2 ห้องเรียน ในแผนการเรียนอังกฤษ - คณิตศาสตร์ โดยใช้อาคารนอน ดี. 3 ดัดแปลงเป็นอาคารเรียน ในขณะเดียวกัน ได้ดำเนินงานควบคู่ไปกับโรงเรียนสาธิตอนุบาล ซึ่งเปิดสอนมาตั้งแต่ปี 2522 โดยใช้อาคารเรียนชั่วคราว มีตั้งแต่ชั้นเด็กเล็ก อนุบาล 1 อนุบาล 2
+                  </p>
+                  <br>
+                  <img src="Images/School Wiset.jpg" alt="Sport" class="img-fluid">
+                  <p style="text-align: justify;">
+                    ท่านพระครูวิเศษสมุทคุณ (หลวงปู่ฮะ จนฺทสโร) เจ้าอาวาสวัดดอนไก่ดีพร้อมด้วยนายบุญล้อม ศรีสุวรรณ (ส.ส. จังหวัดสมุทรสาคร) และนายพงษ์ชัย ชุนบางยาง (ผู้ช่วยศึกษาธิการอำเภอกระทุ่มแบน) ได้เล็งเห็นถึงความสำคัญของการศึกษาจึงได้ร่วมมือกันติดต่อกระทรวงศึกษาธิการ ขอให้เปิดทำการสอนชั้นมัธยมศึกษาปีที่ 1-3 ขึ้นที่วัดดอนไก่ดี จนเป็นผลสำเร็จในปี พ.ศ.2494
+                    </p>
+                </div>
+              </div>
+      
+              <div class="col-sm-4">
+                <img src="Images/Sport.jpg" alt="Sport" class="img-fluid">
+                <p style="text-align: justify;">
+                 <span>อีสปอร์ต (อังกฤษ: Esports)</span> หรือ กีฬาอิเล็กทรอนิกส์ (อังกฤษ: electronic sports) คือกีฬาประเภทบุคคลหรือทีมชนิดหนึ่ง กรมกีฬาได้จัดEsportเป็นส่วนหนึ่งของกีฬาที่เกี่ยวกับกับการแข่งขันวิดีโอเกม โดยมีการแข่งตามประเภทของวิดิโอเกมเช่น เกมวางแผนการรบ, เกมต่อสู้, เกมยิงมุมมองบุคคลที่หนึ่ง, โมบา , เกมอินดี้ การแข่งขันนั้นแบ่งออกเป็นระดับสมัครเล่น กึ่งอาชีพ และระดับมืออาชีพ รวมถึงมีรายการแข่งขันและลีกต่าง ๆ เช่นเดียวกับกีฬาทั่วไป     
+                </p>
+              </div>
+      
+              <div class="col-sm-4">
+                <img src="Images/Computer Skill.jpg" alt="Skill" class="img-fluid">
+                <p class="mt-3">
+                  <kbd>JAVA</kbd>
+                  <kbd>HTML</kbd>
+                  <kbd>Bootstrap</kbd>
+                  <kbd>Node-red</kbd>
+                  <kbd>Node.js</kbd>
+                  <kbd>OS</kbd>
+                  <kbd>Python</kbd>
+                  <kbd>Adobe XD</kbd>
+                  <kbd>Kodular</kbd>
+                  <kbd>SQL</kbd>
+                  <kbd>Animaker</kbd>
+                  <kbd>Visual Studio Code</kbd>
+                  <kbd>Sublime Text</kbd>
+                  <kbd>Chat GPT</kbd>
+                </p>
+              </div>
+            </div>
+          </div>
+      
+          <!-- footer -->
+          <footer>
+            <div class="container-fluid bg-secondary text-center text-white">
+              <p><i class="fas fa-copyright">Coppyright By Chutiwat.IT <br> Nakhon Pathom Rajabhat University </i></p>
+            </div>
+          </footer>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

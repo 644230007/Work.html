@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="chutiwat">
+    <title>Homework-Table-Chutiwat</title>
+    <style>
+        table {
+             border-collapse: collapse;
+             width: 70%;
+        }
+        thead{
+            background-color: black;
+            color: white;
+        }
+        th,td {
+            padding: 5px;
+            border-bottom: 1px solid rgb(238, 238, 238);
+        }
+        h2 {
+            text-align: center;
+        }
+        ins{
+            color: white;
+        }
+      </style>    
+</head>
+<body>
+    <h1>Welcome to Chutiwat Homepage</h1>
+    <hr>
+    <h4 align="right"><a href="home.html">Back to home</a></h4>
+    <h2 align="center">รายการสินค้า</h2>
+    <table border="0" cellpadding="10" cellspacing="0" align="center">
+        <tr>
+            <tbody>
+                <thead>
+                    <th>รหัสสินค้า</th>
+                    <th>ภาพสินค้า</th>
+                    <th>ชื่อสินค้า</th>
+                    <th>ราคา</th>
+                    <th>ดำเนินการ</th>
+                </thead>
+            </tbody>
+        </tr>
+        <tr align="center">
+            <td>P001</td>
+            <td><img src="Images/sushi_1.jpg" alt="Sushi 1" style="width: 60px ;" onclick="showImage(src)"></td>
+            <td style="text-align: left;">Sushi 1</td>
+            <td style="text-align: center;" >400</td>
+            <td bgcolor="red"style="text-align: center;" ><ins onclick="del()">Delete</ins></td>
+        </tr>
+        <tr align="center">
+            <td>P002</td>
+            <td><img src="Images/sushi_2.jpg" alt="Sushi 2" style="width: 60px;" onclick="showImage(src)"></td>
+            <td style="text-align: left;">Sushi 2</td>
+            <td style="text-align: center;" >350</td>
+            <td bgcolor="red"style="text-align: center;"><ins onclick="del()">Delete</ins></td>
+        </tr>
+        <tr align="center">
+            <td>P003</td>
+            <td><img src="Images/sushi_3.jpg" alt="Sushi 3" style="width: 60px;" onclick="showImage(src)"></td>
+            <td style="text-align: left;">Sushi 3</td>
+            <td style="text-align: center;" >350</td>
+            <td bgcolor="red"style="text-align: center;"><ins onclick="del()">Delete</ins></td>
+        </tr>
+        <tr align="center">
+            <td>P004</td>
+            <td><img src="Images/sushi_4.webp" alt="Sushi 4" style="width: 60px;" onclick="showImage(src)"></td>
+            <td style="text-align: left;">Sushi 4</td>
+            <td style="text-align: center;" >120</td>
+            <td bgcolor="red"style="text-align: center;"><ins onclick="del()">Delete</ins></td>
+        </tr>
+        <tr>    
+            <td colspan="4" style="text-align: right;" bgcolor="black"><b style="color: white;">ราคารวม : 1,220 บาท</b>
+            <td bgcolor="black" style="text-align: center;">
+            <button onclick="order()" style="width: 50px;">Order Now</button></td>
+            </td>
+        </tr>
+    </table>
+    <h4 style="text-align: center;"><a href="home.html" style="color: red;">Back to home</a></h4>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        function showImage(src) {
+            Swal.fire({
+            title: 'Sweet!',
+            text: 'Modal with a custom image.',
+            imageUrl: src,
+            imageWidth: 400,
+            imageHeight: 200,
+            imageAlt: 'Custom image',
+            })           
+        }
+        
+        function order() {
+            Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Your work has been saved',
+            showConfirmButton: false,
+            timer: 2000
+            })
+        }
+
+        function del() {
+        const swalWithBootstrapButtons = Swal.mixin({
+            customClass: {
+            confirmButton: 'btn btn-success',
+            cancelButton: 'btn btn-danger'
+            },
+            buttonsStyling: false
+        })
+
+           swalWithBootstrapButtons.fire({
+           title: 'Are you sure?',
+           text: "You won't be able to revert this!",
+           icon: 'warning',
+           showCancelButton: true,
+           confirmButtonText: 'Yes, delete it!',
+           cancelButtonText: 'No, cancel!',
+           reverseButtons: true
+           }).then((result) => {
+        if (result.isConfirmed) {
+           swalWithBootstrapButtons.fire(
+           'Deleted!',
+           'Your file has been deleted.',
+           'success'
+           )
+        } else if (
+           /* Read more about handling dismissals below */
+           result.dismiss === Swal.DismissReason.cancel
+        ) {
+          swalWithBootstrapButtons.fire(
+          'Cancelled',
+          'Your imaginary file is safe :)',
+          'error'
+           )
+        }
+        })
+        }
+
+    </script>
+
+</body>
+</html>

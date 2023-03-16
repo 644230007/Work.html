@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="chutiwat">
+    <title>HTML-Form</title>
+</head>
+<body>
+    <h1>HTML Form</h1>
+    <h3>Input Element</h3>
+    <p>An <span style="color: red;">input element</span> can be displayed in many ways, depending on the <span style="color: red;">type</span> attribute.</p>
+    <form action="">
+     <fieldset style="background-color:  steelblue;">
+         <legend>Text Field</legend>
+        <!-- ชื่อ -->
+        <label for="Fname">First name</label><br>
+        <input type="text" name="Fname" id="Fname" placeholder="กรุณาป้อนชื่อ" required><span style="color: red;">*</span><br>
+        <!-- สกุล -->
+        <label for="Lname">Last name</label><br>
+        <input type="text" name="Lname" id="Lname" placeholder="กรุณาป้อนนามสกุล"><br>
+        <!-- อีเมล -->
+        <label for="Email">Email</label><br>
+        <input type="email" name="Email" id="Email" placeholder="กรุณาป้อนEmail"><br>
+        <!-- อายุ -->
+        <label for="Age">Age</label><br>
+        <input type="number" name="Age" id="Age" placeholder="กรุณาป้อนอายุ" min="0" max="200"><br>
+        <!-- อายุแบบดูเท่านั้น -->
+        <label for="Age">Age read only</label><br>
+        <input type="number" name="Age2" id="Age2" placeholder="กรุณาป้อนอายุ" readonly value="30"><br>
+        <!-- วันเกิด -->
+        <label for="Birthday">Birthday</label><br>
+        <input type="date" name="Birthday" id="Birthday"><br>
+        <!-- เบอร์โทร -->
+        <label for="Phone">Phone</label><br>
+        <input type="tel" name="Phone" id="Phone"><br>
+        <!-- เว็บไซต์ -->
+        <label for="Web">Website</label><br>            
+        <input type="url" name="Web" id="Web"><br>
+    <!-- Redio Button -->
+    </fieldset>
+    <fieldset style="background-color: wheat;">
+        <legend>Redio Button</legend>
+        <label for="Gender">Gender : </label>
+        <input type="radio" name="Gender" id="Gender" value="M"> Male
+        <input type="radio" name="Gender" id="Gender" value="F"> Female
+    </fieldset>
+    <!-- checkbox -->
+    <fieldset style="background-color: tomato;">
+        <legend>checkbox</legend>
+        <label for="Hobby">Hobby : </label>
+        <input type="checkbox" name="Hobby1" id="Hobby" value="Eat"> Eat
+        <input type="checkbox" name="Hobby2" id="Hobby" value="Sleep"> Sleep
+        <input type="checkbox" name="Hobby3" id="Hobby" value="Code"> Code
+    </fieldset>
+    <!-- Select -->
+    <fieldset style="background-color: yellowgreen;">
+        <legend>Select</legend>
+        <label for="Province">Province : </label>
+        <select name="Province" id="Province">
+        <option value="Bangkok">Bangkok</option>
+        <option value="Nakhonpathum">Nakhonpathum</option>
+        <option value="Samutsakhon" selected>Samutsakhon</option>
+        </select>
+        <br>
+    <!-- Favorite Subject -->
+        <label for="Favorite Subject">Favorite Subject</label>
+        <select name="favoritsub" id="favoritsub" size="4">
+            <option value="ENGLISH">ENGLISH</option>
+            <option value="THAI">THAI</option>
+            <option value="MATH">MATH</option>
+            <option value="COMPUTER">COMPUTER</option>
+        </select>
+    <!-- Favorite Subject Multiple -->
+        <label for="Favorite Subject">Favorite Subject Multiple</label>
+        <select name="favoritsub" id="favoritsub" size="4" multiple>
+            <option value="ENGLISH">ENGLISH</option>
+            <option value="THAI">THAI</option>
+            <option value="MATH">MATH</option>
+            <option value="COMPUTER">COMPUTER</option>
+        </select>
+    </fieldset>
+    <!-- Text Area -->
+    <fieldset style="background-color: violet;">
+        <legend>Text Area</legend>
+        <label for="address">Address</label>
+        <textarea name="address" id="address" cols="65" rows="5"></textarea>
+    </fieldset>
+    <!-- Text Area With CSS -->
+    <fieldset style="background-color: yellow;">
+        <legend>Text Area With CSS</legend>
+        <label for="note">Note : </label>
+        <textarea name="note" id="note" style="width: 80%; height: 80px;"></textarea>
+    </fieldset>
+    <!-- Orter -->
+    <fieldset style="background-color: red;">
+        <legend>Other</legend>
+        <label for="color">Color : </label>
+        <input type="color" name="color" id="color"><br>
+        <label for="upload">Upload File : </label>
+        <input type="file" name="upload" id="upload">
+    </fieldset>
+    <!-- 000 -->
+    <br>
+    <input type="submit" value="ยืนยัน">
+    <input type="reset">
+    <button>ล้างข้อมูล</button>
+    <a href="home.html"><input type="button" value="กลับหน้าหลัก" ></a>
+    </form>
+</body>
+</html>

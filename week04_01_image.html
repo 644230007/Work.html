@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chutiwat Kamsakorn">
+    <meta name="description" content="เรียนรู้คำสั่ง HTML เบื้องต้น">
+    <meta name="keywords" content="html css bootstrap javascript">
+    <title>image-chutiwat</title>
+    <style>
+        body{
+            background-color: bisque;
+            background-image: url('Images/ChrismasBG.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Chutiwat Homepage</h1>
+    <hr>
+    <h3 style="text-align: right;"><a href="home.html">Back to Home </a></h3>
+    
+    <h3>Image syntax</h3>
+    <p>แสดงรูปภาพ โดยการอ้างอิงจากเว็บไซต์</p>
+    <img src="https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819__340.jpg" alt="ดอกกุหลาบ">
+    <hr>
+    <p id="flower">แสดงรูปภาพ โดยการอ้างอิ้งจากโฟลเดอร์ในเครื่องของเรา</p>
+    <img src="Images/flower-icon-3.png" alt="flower">
+    <hr>
+    <p>แสดงรูปภาพ โดยการอ้างอิ้งจากโฟลเดอร์ในเครื่องของเรา และปรับขนาดภาพเป็นพิกเซล</p>
+    <img src="Images/flower-icon-3.png" alt="flower" width="50px" height="50px">
+    <hr>
+    <p>แสดงรูปภาพ โดยการอ้างอิ้งจากโฟลเดอร์ในเครื่องของเรา และปรับขนาดภาพเป็นเปอร์เซ็น</p>
+    <img src="Images/flower-icon-3.png" alt="flower" width="50%" height="50%">
+    <hr>
+    <p>แสดงรูปภาพ โดยการอ้างอิ้งจากโฟลเดอร์ในเครื่องของเรา และปรับขนาดภาพด้วย css</p>
+    <img src="Images/flower-icon-3.png" alt="flower" style="width: 50%; height: 50%;">
+    <hr>
+    <p>แสดงรูปภาพ ไว้ด้านขวาของข้อความ<br>
+    <img src="Images/flower-icon-3.png" alt="flower" style="width: 15%; height: 15%; float: right;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid facere minima debitis eum veritatis eligendi eveniet quaerat nulla, dolores magni voluptate natus temporibus hic excepturi commodi corporis eaque ea beatae! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, dolorem. Obcaecati, veritatis voluptates quo porro dolor corporis, amet unde doloribus repudiandae quaerat nihil. Quasi, unde deserunt error omnis commodi maiores?
+    </p>
+    <hr>
+    <p>link แบบรูปภาพ</p>
+    <a href="home.html"><img src="Images/flower-icon-3.png" alt="flower" width="50px" height="50px"></a>
+</body>
+</html>

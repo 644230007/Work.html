@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="chutiwat">
+    <title>Form-Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+<style>
+    body{
+        background-color: darkolivegreen;
+        font-family: 'Kanit', sans-serif;
+    }
+    .container{
+        background-color: white;
+        width: 350px;
+        height: 300px;
+        border-radius: 20px;
+        margin: auto;
+        margin-top: 200px;
+    }
+    .logo{
+        width: 20%;
+        margin-left: 140px;
+        margin-top: 40px;
+        text-align: center;
+    }
+    input{
+        margin: 5px;
+        
+    }
+    .tab{
+        margin-left: 50px;
+    }
+    .check{
+        margin-left: 125px;
+    }
+    .submit{
+        margin-left: 150px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/8/84/Mozilla_Firefox_3.5_logo.png" alt="Firefox"><br>
+        <label class="tab" style="margin-right: 18px;" for="email">E-mail : </label>
+        <input type="email" name="email" id="email" placeholder="ป้อน E-mail"><br>
+        <label class="tab" for="password">Password : </label>
+        <input type="password" name="password" id="password" placeholder="ป้อน รหัสผ่าน"><br>
+        <label class="check" for="checkbox"></label>
+        <input type="checkbox" name="checkbox" id="checkbox">แสดงรหัสผ่าน <br>
+        <input class="submit" type="submit" value="ยืนยัน">
+    </div>
+</body>
+</html>

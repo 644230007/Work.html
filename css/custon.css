@@ -1,0 +1,83 @@
+main{
+    background-color: aqua;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    border-radius: 10px;
+}
+header{
+    /* background-color: red; */
+    overflow: hidden;
+}
+.logo{
+    /* background-color: aqua; */
+    /* width: 50px; */
+    float: left;
+}
+.LogoName{
+    float: left;
+    margin-top: 12px;
+    font-weight: bold;
+    color: blue;
+}
+.menu{
+    /* background-color:yellow; */
+    float: right;
+    margin-top: 10px;
+    font-weight: bold;
+
+}
+.banner{
+    background-color: white;
+}
+.content{
+    /* background-color: darkorange; */
+    overflow: hidden;
+    margin: 0px 20px;
+}
+.subcontent{
+    background-color: #0082d9;
+    width: 300px;
+    height: 400px;
+    float: left;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: black 5px 5px 6px 5px;
+}
+h2{
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    font-size: 25px;
+    font-weight: bold;
+}
+.A-content{
+    color: #00c4eb;
+    text-decoration: solid;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    float: left;
+    list-style: none;
+    margin: 5px;
+}
+footer{
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+    font-weight: bold;
+}
+img.ImgLogo{
+    border-radius: 50%;
+    margin: 5px ;
+}
+body{
+    background-image: linear-gradient(to right, #4c5bbc, #0082d9, #00a4e7, #00c4eb, #4ae2e9);
+}
